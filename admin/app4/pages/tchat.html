@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>index 4</title>
+
+        <!-- favicons  ********************************************* -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../../../ressources/images/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../../../ressources/images/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../../../ressources/images/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../../../ressources/images/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../../../ressources/images/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../../../ressources/images/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../../../ressources/images/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../../../ressources/images/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../ressources/images/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../../../ressources/images/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../ressources/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../../../ressources/images/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../ressources/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../../../ressources/images/favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style>
+                body {
+  background: url(../img/bg.png) center no-repeat;
+  background-size: cover;
+  background-color: #b9c1d4;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; }
+
+img {
+  max-width: 100%; }
+
+ul {
+  padding-left: 0; }
+
+li {
+  list-style-type: none; }
+
+a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  a:hover {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+#wrapper {
+  width: 1024px;
+  height: 768px;
+  /*max-width: 90%;*/
+  max-height: 90%;
+  padding: 15px;
+  border-radius: 7px;
+  /*position: absolute;*/
+  /*left: 50%;*/
+  /*top: 50%;*/
+  /*transform: translate(-50%, -50%);*/
+  margin: auto;
+  background-image: -moz-linear-gradient(135deg, #fafaff 0%, #f7f7fc 100%);
+  background-image: -webkit-linear-gradient(135deg, #fafaff 0%, #f7f7fc 100%);
+  background-image: -ms-linear-gradient(135deg, #fafaff 0%, #f7f7fc 100%);
+  box-shadow: 0px 12px 30px 0px rgba(1, 50, 101, 0.07); }
+
+.sidebar {
+  width: 70px;
+  height: 100%;
+  border-radius: 7px;
+  float: left;
+  background-image: -moz-linear-gradient(90deg, #117ee7 0%, #108ef2 100%);
+  background-image: -webkit-linear-gradient(90deg, #117ee7 0%, #108ef2 100%);
+  background-image: -ms-linear-gradient(90deg, #117ee7 0%, #108ef2 100%);
+  box-shadow: 15px 15px 30px 0px rgba(1, 50, 101, 0.21);
+  padding: 35px 0;
+  position: relative; }
+  .sidebar .profile-img {
+    padding: 0 12px;
+    margin-bottom: 40px; }
+    .sidebar .profile-img img {
+      border-radius: 50%;
+      border: 3px solid #fff; }
+  .sidebar .sidebar-menu {
+    display: block; }
+    .sidebar .sidebar-menu .sidebar-menu__links {
+      display: block;
+      height: 55px;
+      border-left: 0px solid #fff;
+      text-align: center;
+      padding-top: 15px;
+      margin-bottom: 10px; }
+      .sidebar .sidebar-menu .sidebar-menu__links.active, .sidebar .sidebar-menu .sidebar-menu__links:hover {
+        background-color: #43a4f3;
+        border-left: 4px solid #fff; }
+  .sidebar .btn-menu {
+    position: absolute;
+    bottom: 25px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    opacity: 1; }
+    .sidebar .btn-menu:hover {
+      opacity: .7; }
+
+.messages {
+  width: 345px;
+  height: 100%;
+  float: left;
+  margin-left: 15px;
+  position: relative;
+  /*overflow: auto;
+  padding-right: 15px;*/ }
+  .messages .seacrh-bar {
+    border-radius: 7px;
+    background: #f0f2f4;
+    box-shadow: 9px 9px 30px 0px rgba(1, 50, 101, 0.21);
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px; }
+    .messages .seacrh-bar img {
+      margin: 14px 10px 15px 15px; }
+    .messages .seacrh-bar input {
+      background: none;
+      border: none;
+      height: 45px;
+      width: calc(100% - 50px); }
+      .messages .seacrh-bar input:focus {
+        outline: none; }
+  .messages .messages__item {
+    background: #fff;
+    box-shadow: 9px 9px 30px 0px rgba(1, 50, 101, 0.21);
+    border-radius: 7px;
+    width: 100%;
+    height: 115px;
+    margin-bottom: 15px;
+    padding: 20px 15px;
+    display: block;
+    position: relative;
+    overflow: hidden; }
+    .messages .messages__item:hover, .messages .messages__item.active {
+      text-decoration: none;
+      box-shadow: 9px 9px 30px 10px rgba(1, 50, 101, 0.21);
+      background: #f0f2f4; }
+    .messages .messages__item .name {
+      color: #4a4a4a;
+      font-size: 16px;
+      font-weight: 500;
+      float: left; }
+    .messages .messages__item .date {
+      float: right;
+      color: #c0c0c0; }
+    .messages .messages__item .content {
+      float: left;
+      padding: 10px 0;
+      color: #565656;
+      font-size: 15px; }
+    .messages .messages__item.unread:after {
+      content: '';
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      right: -12px;
+      top: 50px;
+      border-radius: 50%;
+      background-image: -moz-linear-gradient(90deg, #117ee7 0%, #108ef2 100%);
+      background-image: -webkit-linear-gradient(90deg, #117ee7 0%, #108ef2 100%);
+      background-image: -ms-linear-gradient(90deg, #117ee7 0%, #108ef2 100%);
+      box-shadow: 5px 5px 30px 0px rgba(1, 50, 101, 0.21); }
+
+.message-content {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 9px 9px 30px 0px rgba(1, 50, 101, 0.21);
+  max-width: 550px;
+  width: 100%;
+  height: 100%;
+  float: right;
+  position: relative;
+  /* margin-left: 15px;*/ }
+  .message-content .message-content__item .message-content-header {
+    border-bottom: 1px solid #e0e2e4;
+    padding: 20px 15px;
+    position: relative;
+    height: 95px; }
+    .message-content .message-content__item .message-content-header .name {
+      font-size: 21px;
+      color: #535357;
+      font-weight: 500; }
+    .message-content .message-content__item .message-content-header .phone {
+      font-size: 16px;
+      color: #a3a3a7; }
+    .message-content .message-content__item .message-content-header img {
+      position: absolute;
+      top: 30px;
+      right: 15px; }
+  .message-content .message-box {
+    padding: 25px;
+    height: calc(100% - 175px); }
+    .message-content .message-box .message-box__item {
+      margin-bottom: 15px; }
+      .message-content .message-box .message-box__item.incoming {
+        text-align: left; }
+        .message-content .message-box .message-box__item.incoming .time {
+          right: 0; }
+      .message-content .message-box .message-box__item.outgoing {
+        text-align: right; }
+        .message-content .message-box .message-box__item.outgoing .time {
+          left: 0; }
+      .message-content .message-box .message-box__item .name {
+        color: #535357;
+        font-size: 16px;
+        font-weight: 400; }
+
+      .message-content .message-box .message-box__item .box-text {
+        background: #f0f2f4;
+        display: inline-block;
+        padding: 20px 15px;
+        padding-right: 50px;
+        font-size: 16px;
+        color: #535357;
+        border-radius: 7px;
+        max-width: 90%;
+        margin-top: 10px;
+        text-align: left;
+        position: relative;
+        margin-bottom: 20px; }
+
+
+
+        .message-content .message-box .message-box__item .box-text .time {
+          position: absolute;
+          bottom: -25px;
+          font-size: 13px;
+          color: #939397; }
+          
+  .message-content .message-form {
+    height: 75px;
+    border-top: 1px solid #e0e2e4;
+    padding: 20px 15px; }
+    .message-content .message-form input {
+      width: calc(100% - 50px);
+      border: none;
+      font-size: 16px;
+      margin-top: 5px; }
+    .message-content .message-form img {
+      float: right;
+      margin-top: 10px; }
+
+/*# sourceMappingURL=style.css.map */
+
+        
+        
+        
+        </style>
+        <!-- stylesheet  ********************************************* -->
+        <link rel="stylesheet" type="text/css" media="screen" href="../../../ressources/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../../app4/styles/design.css" />
+
+        <script src="../../../ressources/js/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <!-- sidebar /*********************************************/ -->
+        <section id="sidebar" class="">
+            <a href="#">
+                <img src="../../../ressources/images/iua-dark.png"  alt="logo iua" class="img-fluid" />
+            </a>
+            <div class="sidebar-menu">
+                <p class="sidebar-menu_section">General</p>
+                <ul>
+                    <li>
+                        <a href="#">Tableau de bord</a>
+                    </li>
+                </ul>
+
+                <p class="sidebar-menu_section">Etudiants</p>
+                <ul>
+                    <li>
+                        <a  id="drop_onClick" class="pointe">
+                            <img src="../../adRessources/images/icons/arrow-point-to-right.svg" id="rotation-icon" alt="" class="img-fluid " style="max-height: 10px;">
+                            &nbsp;Koffi Anvi Yves ...
+                        </a>
+                    </li>
+                    <ul id="my-dropdown" class="sidebarmenu-dropdown">
+                        <li>
+                            <a href="#">Profil de l'étudiant</a>
+                        </li>
+                        <li>
+                            <a href="#">Emploi du temps</a>
+                        </li>
+                        <li>
+                            <a href="#">Rélévé de notes</a>
+                        </li>
+                        <li>
+                            <a href="#">Enseignants</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a  id="drop_onClick2" class="pointe">
+                            <img src="../../adRessources/images/icons/arrow-point-to-right.svg" id="rotation-icon2" alt="" class="img-fluid " style="max-height: 10px;">
+                            &nbsp;Koffi Kay Andy
+                        </a>
+                    </li>
+                    <ul id="my-dropdown2" class="sidebarmenu-dropdown">
+                        <li>
+                            <a href="#">Profil de l'étudiant</a>
+                        </li>
+                        <li>
+                            <a href="#">Emploi du temps</a>
+                        </li>
+                        <li>
+                            <a href="#">Rélévé de notes</a>
+                        </li>
+                        <li>
+                            <a href="#">Enseignants</a>
+                        </li>
+                    </ul>
+                </ul>
+
+                <p class="sidebar-menu_section">Comptabilité</p>
+                <ul>
+                    <li>
+                        <a href="#">Frais de scolarités</a>
+                    </li>
+                    <li>
+                        <a href="#">Divers</a>
+                    </li>
+                </ul>
+
+                <p class="sidebar-menu_section">Administration</p>
+                <ul>
+                    <li>
+                        <a href="#">Siège de l'institut</a>
+                    </li>
+                    <li>
+                        <a href="#">Envoyer un mail</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- main-content /*********************************************/ -->
+
+        <section id="main-content">
+
+            <!-- header /----------------------------/ -->
+            <header class="option-bar">
+                <div class="container-fluid mb-5">
+                    <p>Mon espace</p>
+
+                    
+                    <!-------------------------------->
+                    <a href="#" id="notif">
+                            <div class="notification-point"></div>
+                        <img src="../../adRessources/images/icons/notification.svg"  class="img-fluid">
+                    </a>
+                    <div class="option-notification_card" id="notification-card">
+                        <ul style="margin-bottom: 0px;">
+                            <a href="#">
+                                <li style="padding: 10px 20px;">
+                                    <div style="display: flex">
+                                        <div class="notification-photo_dropdown" style="background: url(../../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                        <ul>
+                                            <li class="cl5">Administration - <small class="cl4">il y a 4 mins</small></li>
+                                            <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li style="padding: 10px 20px;">
+                                    <div style="display: flex">
+                                        <div class="notification-photo_dropdown" style="background: url(../../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                        <ul>
+                                            <li class="cl5">Mr aliko - <small class="cl4">il y a 15 heures</small></li>
+                                            <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li style="padding: 10px 20px;">
+                                    <div style="display: flex">
+                                        <div class="notification-photo_dropdown" style="background: url(../../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                        <ul>
+                                            <li class="cl5">Comptabilité - <small class="cl4">il y a 2 jours</small></li>
+                                            <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li style="padding: 10px 20px;">
+                                    <div style="display: flex">
+                                        <div class="notification-photo_dropdown" style="background: url(../../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                        <ul>
+                                            <li class="cl5">Mme Kouassi - <small class="cl4">il y a 4 jours</small></li>
+                                            <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li style="padding: 10px 20px;">
+                                    <div style="display: flex">
+                                        <div class="notification-photo_dropdown" style="background: url(../../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                        <ul>
+                                            <li class="cl5">Le directeur - <small class="cl4">il y a 12 jours</small></li>
+                                            <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <div class="allMessage text-center mt-3">
+                                    Tous les messages
+                                </div>
+                            </a>
+                        </ul>
+                    </div>
+                    <!-------------------------------->
+                    <div class="option-profil" id="option"></div>
+                    <div class="option-profil_card" id="profil-card">
+                        <ul>
+                            <a href="#"><li><img src="../../adRessources/images/icons/avatar.svg" class="img-fluid " alt="">&nbsp; Mon profil </li></a>
+                            <a href="#"><li> <img src="../../adRessources/images/icons/iua.svg" class="img-fluid " alt="">&nbsp; Deconnexion</li></a>
+                        </ul>
+                    </div>
+                    <!-------------------------------->
+                </div>
+            </header>
+
+        
+
+
+
+
+
+            <div id="wrapper">
+                    <div class="sidebar">
+                        <div class="profile-img">
+                            <img src="http://muhammederdem.com.tr/imagesrdm/profile.jpg" alt="">
+                        </div>
+            
+                        <ul class="sidebar-menu">
+                            <li><a href="#" class="sidebar-menu__links active"><img src="http://muhammederdem.com.tr/sms/img/inbox.png" alt=""></a></li>
+                            <li><a href="#" class="sidebar-menu__links"><img src="http://muhammederdem.com.tr/sms/img/send.png" alt=""></a></li>
+                            <li><a href="#" class="sidebar-menu__links"><img src="http://muhammederdem.com.tr/sms/img/draft.png" alt=""></a></li>
+                            <li><a href="#" class="sidebar-menu__links"><img src="http://muhammederdem.com.tr/sms/img/trash.png" alt=""></a></li>
+                        </ul>
+            
+                        <a href="#" class="btn-menu"><img src="img/menu.png" alt=""></a>
+                    </div>
+            
+                    <div class="messages">
+            
+                        <div class="seacrh-bar">
+            
+                            <img src="img/search.png" alt="">
+                            <input type="text" placeholder="Search">
+            
+                        </div>
+            
+                        <a href="#" class="messages__item">
+                                <div class="name">
+                                    Muhammed ERDEM
+                                </div>
+                                <div class="date">
+                                    1h ago
+                                </div>
+            
+                                <div class="content">
+                                    Currently We are looking for a UI designer to work on our websites and mobile application...
+                                </div>
+                        </a>
+            
+                        <a href="#" class="messages__item unread">
+                                <div class="name">
+                                    Muhammed ERDEM
+                                </div>
+                                <div class="date">
+                                    1h ago
+                                </div>
+            
+                                <div class="content">
+                                    Currently We are looking for a UI designer to work on our websites and mobile application...
+                                </div>
+                        </a>
+            
+                        <a href="#" class="messages__item">
+                                <div class="name">
+                                    Muhammed ERDEM
+                                </div>
+                                <div class="date">
+                                    1h ago
+                                </div>
+            
+                                <div class="content">
+                                    Currently We are looking for a UI designer to work on our websites and mobile application...
+                                </div>
+                        </a>
+            
+                        <a href="#" class="messages__item">
+                                <div class="name">
+                                    Muhammed ERDEM
+                                </div>
+                                <div class="date">
+                                    1h ago
+                                </div>
+            
+                                <div class="content">
+                                    Currently We are looking for a UI designer to work on our websites and mobile application...
+                                </div>
+                        </a>
+            
+                        <a href="#" class="messages__item active">
+                                <div class="name">
+                                    Muhammed ERDEM
+                                </div>
+                                <div class="date">
+                                    1h ago
+                                </div>
+            
+                                <div class="content">
+                                    Currently We are looking for a UI designer to work on our websites and mobile application...
+                                </div>
+                        </a>
+                        <a href="#" class="messages__item active">
+                                <div class="name">
+                                    Muhammed ERDEM
+                                </div>
+                                <div class="date">
+                                    1h ago
+                                </div>
+            
+                                <div class="content">
+                                    Currently We are looking for a UI designer to work on our websites and mobile application...
+                                </div>
+                        </a>
+                        <a href="#" class="messages__item active">
+                                <div class="name">
+                                    Muhammed ERDEM
+                                </div>
+                                <div class="date">
+                                    1h ago
+                                </div>
+            
+                                <div class="content">
+                                    Currently We are looking for a UI designer to work on our websites and mobile application...
+                                </div>
+                        </a>
+                        <a href="#" class="messages__item active">
+                                <div class="name">
+                                    Muhammed ERDEM
+                                </div>
+                                <div class="date">
+                                    1h ago
+                                </div>
+            
+                                <div class="content">
+                                    Currently We are looking for a UI designer to work on our websites and mobile application...
+                                </div>
+                        </a>
+                        <a href="#" class="messages__item active">
+                                <div class="name">
+                                    Muhammed ERDEM
+                                </div>
+                                <div class="date">
+                                    1h ago
+                                </div>
+            
+                                <div class="content">
+                                    Currently We are looking for a UI designer to work on our websites and mobile application...
+                                </div>
+                        </a>
+                        <a href="#" class="messages__item active">
+                                <div class="name">
+                                    Muhammed ERDEM
+                                </div>
+                                <div class="date">
+                                    1h ago
+                                </div>
+            
+                                <div class="content">
+                                    Currently We are looking for a UI designer to work on our websites and mobile application...
+                                </div>
+                        </a>
+                        <a href="#" class="messages__item active">
+                                <div class="name">
+                                    Muhammed ERDEM
+                                </div>
+                                <div class="date">
+                                    1h ago
+                                </div>
+            
+                                <div class="content">
+                                    Currently We are looking for a UI designer to work on our websites and mobile application...
+                                </div>
+                        </a>
+            
+            
+                    </div>
+            
+                    <div class="message-content">
+            
+                        <div class="message-content__item">
+                            <div class="message-content-header">
+                                <div class="name">Muhammed ERDEM</div>
+                                <div class="phone">+90 507 047 3099</div>
+                                <img src="img/message-more.png" alt="">
+                            </div>
+                        </div>
+            
+                        <div class="message-box">
+                            <div class="message-box__item incoming">
+                                <div class="name">Muhammed ERDEM</div>
+            
+                                <div class="box-text">
+                                    Hey man!
+            
+                                    <div class="time">18:36</div>
+                                </div>
+                            </div>
+            
+                            <div class="message-box__item outgoing">
+            
+                                <div class="box-text">
+                                        Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir
+            
+                                    <div class="time">18:36</div>
+                                </div>
+                            </div>
+            
+                            <div class="message-box__item outgoing">
+            
+                                <div class="box-text">
+                                    Currently We are looking for a UI designer to work on our websites and mobile application.
+            
+                                    <div class="time">18:36</div>
+                                </div>
+                            </div>
+            
+                            <div class="message-box__item incoming">
+                                <div class="name">Muhammed ERDEM</div>
+            
+                                <div class="box-text">
+                                        Currently We are looking
+            
+                                    <div class="time">18:36</div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+            
+                        <div class="message-form">
+                            <input type="text" placeholder="Type your message here">
+                            <img src="img/submit.png" alt="">
+                        </div>
+            
+                    </div>
+                </div>
+
+        
+
+        <script src="../../../ressources/js/bootstrap.min.js"></script>
+        <script src="../../app4/script/script.js"></script>
+
+    </body>
+</html>

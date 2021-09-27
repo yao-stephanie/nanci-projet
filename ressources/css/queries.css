@@ -1,0 +1,301 @@
+
+
+@media (max-width: 1717px) {
+    .nav_bar ul li a.responsive{
+        display: inline-block;
+    }
+
+    .nav_bar ul li.alpha{
+        display: none;
+    }
+
+    .nav_bar ul li.beta{
+        display: none;
+    }
+
+    .nav_bar {
+        width: 69%;
+        margin: auto;
+    }
+}
+
+/*--  /*********************************************/
+@media (max-width: 1400px) {
+    .facultiesTextAside p{
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .facultyStyle1,
+    .facultyStyle3{
+        width: 100%;
+    }
+
+    .block2 .newsletter {
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        padding: 10px;
+        border-radius: 9px;
+    }
+}
+
+/*--  /*********************************************/
+@media (max-width: 1194px) {
+    .nav_bar ul li.big{
+        display: none;
+    }
+
+    .nav_bar ul li.hamburger{
+        display: inline-block;
+    }
+
+    .top-bar{
+        display: none;
+    }
+
+    .nav_bar {
+        width: 100%; 
+    }
+
+    .slide__heading {
+        margin-bottom: 20px;
+        font-size: 50px;
+    }
+
+    .slide__text {
+        font-size: 20px;
+    }
+
+    .slide__content {
+        position: absolute;
+        left: 9%;
+        top: 220px;
+        margin-left: -30px;
+        margin-top: 48px;
+        max-width: 480px;
+        color: #fff;
+    }
+}
+
+/*--  /*********************************************/
+@media (max-width: 1105px) {
+    .block1-divp {
+        font-size: 15px;
+        border: none;
+    }
+
+    .facultiesTextAside {
+        padding-left: 60px;
+    }
+
+    .faculty {
+        width: 93%;
+        margin: auto;
+    }
+
+    .blockCount p{
+        width: 100%;
+    }
+
+    .footer-block{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/*--  /*********************************************/
+@media (max-width: 991px) {
+    .faculty {
+        display: initial;
+    }
+
+    .facultiesTextAside{
+        width: 90%;
+        margin: auto;
+        padding-left: 0px;
+        margin-top: 30px;
+    }
+
+    .facultiesTextAside p{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .facultiesTextAside .divInside {
+        position: initial;
+    }
+
+    .faculties {
+        width: 94%;
+        margin: auto;
+    }
+
+    .faculty1 {
+        justify-content: initial;
+    }
+
+    .actuG{
+        position: initial; 
+    }
+
+    .actu-text{
+        width: 100%
+    }
+
+    .block2 .newsletter {
+        width: 60%;
+        margin: auto;
+    }
+
+    .slide__heading {
+        margin-bottom: 20px;
+        font-size: 45px;
+    }
+
+    .slide__text {
+        font-size: 18px;
+    }
+
+
+    .img-rad-tl{
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+    }
+    
+    .img-rad-tr{
+        border-top-right-radius: 0px;
+    }
+    
+    .img-rad-br{
+        border-bottom-right-radius: 0px;
+    }
+    
+    .img-rad-bl{
+        border-bottom-left-radius: 13px;
+        border-bottom-right-radius: 13px;
+    }
+
+    .block1-divp {
+        text-align: center;
+    }
+ 
+}
+
+/*--  /*********************************************/
+@media (max-width: 767px) {
+    .block1-divp {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .img-rad{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .rad{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .block2 .newsletter {
+        background-size: cover;
+        height: 500px;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        padding: 10px;
+        border-radius: 9px;
+    }
+
+    .celf{
+        text-align: left;
+    }
+
+    .my-divider{
+        height: 1px;
+        width: 20%;
+        margin-bottom: 30px;
+        background: #182f5957;
+        display: inline-block;
+    }
+
+    .block2_2, .blockCount-1 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .slide__content {
+        position: absolute;
+        left: 12%;
+        top: 250px;
+        margin-left: -30px;
+        margin-top: 48px;
+        max-width: 480px;
+        color: #fff;
+    }
+
+    .slide__heading {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+
+    .slide__text {
+        font-size: 16px;
+    }
+}
+
+/*--  /*********************************************/
+@media (max-width: 575px) {
+    .faculty2 {
+        display: initial;
+    }
+
+    .faculty1{
+        display: initial;
+    }
+
+    .facultyStyle1,
+    .facultyStyle3{
+        height: 200px;
+    }
+
+    .facultyStyle3 {
+        background-position: top;
+    }
+
+    .block1_15{
+        width: 94%;
+        margin: auto;
+    }
+
+    .block2 .newsletter {
+        width: 100%;
+    }
+
+    .block2 .newsletter h5 {
+        font-weight: bold;
+         font-size: 22px; 
+    }
+}
+
+/*--  /*********************************************/
+@media (max-width: 337px) {
+    .tabs {
+        margin-top: 50px;
+        font-size: 13px;
+    }
+
+    .tabs a {
+
+        padding: 10px 13px;
+
+    }
+}
+
+
+

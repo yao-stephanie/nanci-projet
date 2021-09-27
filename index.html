@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>iua</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- favicons  ********************************************* -->
+
+        <link rel="apple-touch-icon" sizes="57x57" href="ressources/images/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="ressources/images/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="ressources/images/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="ressources/images/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="ressources/images/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="ressources/images/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="ressources/images/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="ressources/images/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="ressources/images/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="ressources/images/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="ressources/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="ressources/images/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="ressources/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="ressources/images/favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Stylesheet ********************************************* -->
+        <link rel="stylesheet" type="text/css" media="screen" href="ressources/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="ressources/css/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="ressources/css/queries.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="ressources/css/modal-video.min.css" />
+        
+        <script src="ressources/js/jquery.min.js"></script>
+        <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+
+
+
+    </head>
+    <body>
+        <div id="rideau" style="height: 100vh; width:100%; z-index:10000; background:#0d131da1 ;position: fixed; display: none"></div>
+        <div id="my_website" >
+            <!-- top bar /*********************************************/ -->
+            <div class="top-bar bg_indigo-iua">
+                <div class="container-fluid">
+                    <ul>
+                        <span class="cl_blue-grey">.</span>
+                        <!-- <li>
+                            <a href="admin/log3.html">Etudiants</a>
+                        </li>
+                        <span class="cl_blue-grey">.</span>
+                        <li>
+                            <a href="admin/log4.html">Parents</a>
+                        </li>
+                        <span class="cl_blue-grey">.</span>
+                        <li>
+                            <a href="admin/log2.html">Enseignants</a>
+                        </li>
+                        <span class="cl_blue-grey">.</span>
+                        <li>
+                            <a href="admin/log.html">Administration</a>
+                        </li> -->
+
+                        <span class="float-right top-bar_social">
+                            <li>
+                                <a href="https://www.facebook.com/ecolenan" class="social"><ion-icon name="logo-facebook"></ion-icon></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCWB0VDT_tMZ-xOkvjFvlUnw" class="social"><ion-icon name="logo-youtube"></ion-icon></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/school/nan-not-a-number/" class="social"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            </li>
+                            <!-- <li>
+                                <a href="#" class="social"><ion-icon name="logo-twitter"></ion-icon></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social"><ion-icon name="logo-instagram"></ion-icon></a>
+                            </li>
+
+                            <li>
+                                <a href="#" >
+                                    <img src="ressources/images/flags/france.svg" class="img-fluid" style="max-height: 20px;" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="ressources/images/flags/united-kingdom.svg" class="img-fluid" style="max-height: 20px;" alt="">
+                                </a>
+                            </li> -->
+                        </span>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- nav bar /*********************************************/ -->
+            <nav>
+                <section class="nav_bar">
+                    <div class="container-fluid" style="position: relative;">
+                        <div style="position: absolute; top: -10px;left: 40px;">
+                            <a href="#">
+                                <img src="ressources/images/logo-nan.png"  class="img-fluid liua" id='Logo' alt="logo">
+                            </a>
+                        </div>
+                        <ul>
+                            <!-- <li>
+                                    <img src="ressources/images/rognon2.png"  class="img-fluid" style="max-height: 64px;" alt="logo">
+                            </li> -->
+                            <li class="big">
+                                <a href="#" class="underline"><span class="animation"> L'Académie</span></a>
+                                <ul class="menu-dropdown">
+                                    <div class="dropdown-field">
+                                        <div class="row">
+                                            <div class="col-3 br-dc1">
+                                                <ol>
+                                                    <li class="mb-3"><a href="#" >Mot du Directeur</a></li>
+                                                    <li class="mb-3"><a href="#">Qui sommes-nous</a></li>
+                                                    <li class="mb-3"><a href="#">Système éducatif</a></li>
+                                                    <li class="mb-3"><a href="#">Nos services</a></li>
+                                                    <li class="mb-3"><a href="#">Nos agréments</a></li>
+                                                    <li class="mb-3"><a href="#">Nos partenaires</a></li>
+                                                </ol>
+                                            </div>
+                                            <div class="col-9">
+                                                <img src="ressources/images/simon.jpg"  class="img-fluid" alt="">
+                                            </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="big">
+                                <a href="#" class="underline"><span class="animation"> Spécialités</span></a>
+                                <ul class="menu-dropdown">
+                                    <div class="dropdown-field">
+                                        <div class="row">
+                                            <div class="col-3 br-dc1">
+                                                <h5 class="sous-menu_title cl_blue-iua">développeur d'application web</h5>
+                                                <ol>
+                                                    <li class="mb-3"><a href="#">Front End</a></li>
+                                                    <li class="mb-3"><a href="#" >Javascript</a></li>
+                                                    <li class="mb-3"><a href="#">Python</a></li>
+                                                    <li class="mb-3"><a href="#">Goland</a></li>
+                                                </ol>
+                                            </div>
+                                            <div class="col-3 br-dc1">
+                                                <h5 class="sous-menu_title cl_blue-iua">développeur d'application Mobile</h5>
+                                                <ol>
+                                                
+                                                    <li class="mb-3"><a href="#">Flutter</a></li>
+                    
+                                                </ol>
+                                            </div>
+                                            <div class="col-3 br-dc1">
+                                                <h5 class="sous-menu_title cl_blue-iua">community manager</h5>
+                                                <ol>
+                                                    <li class="mb-2"><a href="#">Facebook</a></li><br>
+                                                    <li class="mb-3"><a href="#" >Linkedin</a></li>
+                                                    <li class="mb-3"><a href="#" >Photoshop</a></li>
+                                                    <li class="mb-3"><a href="#" >Premiere pro</a></li>
+                                                </ol>
+                                                
+                                            </div>
+                                            <div class="col-3">
+                                                    <h5 class="sous-menu_title cl_blue-iua">Experts en Data science</h5>
+                                                    <ol>
+                                                        <li class="mb-2"><a href="#">Mysql</a></li>
+                                                        <li class="mb-3"><a href="#" >Microsoft sql</a></li>
+                                                    </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="big">
+                                <a href="#" class="underline"><span class="animation"> Admission</span></a>
+                                <ul class="menu-dropdown">
+                                    <div class="dropdown-field">
+                                            <div class="row">
+                                                <div class="col-3 br-dc1">
+                                                    <ol>
+                                                        <li class="mb-3"><a href="#">Conditions d'admission</a></li>
+                                                    </ol>
+                                                </div>
+                                                <div class="col-3 br-dc1">
+                                                    <ol>
+                                                        <li class="mb-3"><a href="#">Demande d'admission</a></li>
+                                                    </ol>
+                                                </div>
+                                                <div class="col-3 br-dc1">
+                                                    <ol>
+                                                        <li class="mb-3"><a href="#">Pré-inscription</a></li><br>
+                                                    </ol>
+                                                </div>
+                                                <div class="col-3 br-dc1">
+                                                    <ol>
+                                                        <li class="mb-3"><a href="#">Inscription</a></li>
+                                                    </ol>
+                                                </div>
+                                                
+                                            </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="big">
+                                <a href="#" class="underline"><span class="animation"> NaNien(e)s</span></a>
+                                <ul class="menu-dropdown">
+                                    <div class="dropdown-field">
+                                        <div class="row">
+                                            <div class="col-3 br-dc1">
+                                                <ol>
+                                                    <li class="mb-3"><a href="#">Nos campus</a></li>
+                                                    <li class="mb-3"><a href="#">Emploi du temps</a></li><br>
+                                                    <li class="mb-3"><a href="#">Vie des étudiants</a></li><br>
+                                                    <li class="mb-3"><a href="#">Anciens étudiants</a></li>
+                                                </ol>
+                                            </div>
+                                            <div class="col-9">
+                                                <div style="width:100%; height:100%;" class="text-center zee">
+                                                </div>
+                                            </div>
+                                        <div class="row">
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="beta big">
+                                <a href="#" class="underline"><span class="animation"> Entreprises</span></a>
+                                <ul class="menu-dropdown">
+                                    <div class="dropdown-field">
+                                        <div class="row">
+                                            <div class="col-3 br-dc1">
+                                                <ol>
+                                                    <li class="mb-3"><a href="#">Formez vos talents</a></li><br>
+                                                </ol>
+                                            </div>
+                                            <div class="col-9 br-dc1">
+                                                <ol>
+                                                    <li class="mb-3"><a href="#">Recrutez vos talents</a></li>
+                                                </ol>
+                                            </div>
+                                            <!-- <div class="col-9">
+                                                <div style="width:100%; height:100%; background:#192f59;"></div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="alpha big">
+                                <a href="#" class="underline"><span class="animation"> Cours en ligne</span></a>
+                                <ul class="menu-dropdown">
+                                    <div class="dropdown-field">
+                                        <div class="row">
+                                            <div class="col-3 br-dc1">
+                                                <ol>
+                                                    <li class="mb-3"><a href="#">Login</a></li><br>
+                                                </ol>
+                                            </div>
+                                            <div class="col-9">
+                                                <ol>
+                                                    <li class="mb-3"><a href="#">tutoriels</a></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="big">
+                                <a href="#" class="link link--arrowed responsive"><span > Plus</span>
+                                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                        <g fill="none" stroke="#179bd7" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                                            <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                            <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <ul class="menu-dropdown">
+                                    <div class="dropdown-field">
+                                        <div class="row">
+                                            <div class="col-6 br-dc1">
+                                                <h5 class="sous-menu_title cl_blue-iua">Cours en ligne</h5>
+                                                <ol>
+                                                    <li class="mb-3"><a href="#">Login</a></li>
+                                                    <li class="mb-3"><a href="#" >tutoriels</a></li>
+                                                </ol>
+                                            </div>
+                                            <div class="col-6 ">
+                                                <h5 class="sous-menu_title cl_blue-iua">Entreprises</h5>
+                                                <ol>
+                                                    <li class="mb-3"><a href="#">Formez vos talents</a></li>
+                                                    <li class="mb-3"><a href="#">Recruter vos talents</a></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="hamburger" >
+                                <a class="nav-top">
+                                        <img class="hamburger" src="ressources/images/icons/menu-options.svg" class="img-fluid" style="max-height: 30px;" id="ham">
+                                </a>
+                            </li> 
+                        </ul>
+                    </div>
+                </section>
+            </nav>
+
+            <!-- menu responsive /*********************************************/ -->     
+            <nav class="nav-drill">
+                <ul class="nav-items nav-level-1">
+                    <li class="nav-item">
+                        <a class="nav-top"  style="float: right">
+                            <span  id="clo"><img src="ressources/images/icons/cross-square-button.svg" class="img-fluid" style="max-height: 30px;"> </span>
+                        </a>
+                        <br>
+                        <p class="cl_jaune-iua mg-min"> &nbsp; Institut <br>&nbsp; Universitaire <br>&nbsp; Abidjan</p>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            L'institut
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Mot du président
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                        Qui sommes-nous ?
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                        Système de gestion
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                        Nos services
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                        Nos agréments
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                        Nos partenaires
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Facultés
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                        
+                            <li class="nav-item nav-expand">
+                                <a class="nav-link nav-expand-link" href="#">
+                                        sciences economiques sociales
+                                </a>
+                                <ul class="nav-items nav-expand-content">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                                Communication
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                                Sciences economiques
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                                Administration des affaires
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                                Sciences sociales appliquées
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-expand">
+                                <a class="nav-link nav-expand-link" href="#">
+                                        faculté des sciences technologies
+                                </a>
+                                <ul class="nav-items nav-expand-content">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                                Informatiques
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                                Ecole d'ingenierie
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                                Mathématiques et statistiques
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                                Géomatique et ingenierie de l'environnement
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-expand">
+                                <a class="nav-link nav-expand-link" href="#">
+                                        sciences juridiques politiques
+                                </a>
+                                <ul class="nav-items nav-expand-content">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                                Droit
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                                Sciences politiques
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-expand">
+                                <a class="nav-link nav-expand-link" href="#">
+                                        nouveaux masters
+                                </a>
+                                <ul class="nav-items nav-expand-content">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                                Géomatique
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                                Droit maritime
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Admission
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                        Conditions d'admission
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                        Demande d'admission
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                        Pré-inscription
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                        Inscription
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Campus
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Nos campus
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Emploi du temps
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Vie des étudiants
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Anciens étudiants
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Recherche & inovation
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Recherche
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Projets innovants
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            International
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                   Etudier à l'étranger
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                   etudiants étrangers
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/log3.html">
+                            Etudiants
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/log4.html">
+                            Parents
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/log2.html">
+                            Enseignants
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/log.html">
+                            Administration
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+           
+            <!-- header /*********************************************/ -->
+            <header>
+                <div class="slider">
+                    <!-- slides -->
+                    <div class="slider__slides">
+                        <div class="slide s--active">
+                            <div class="slide__inner">
+                                <div class="sous-slide__inner" style="background: linear-gradient(90deg, #29b1c7, #fff0);  width: 50vw;">
+                                    <div class="slide__content">
+                                        <p>l'académie</p>
+                                        <h2 class="slide__heading">Une Pédagogie inspirée de 42</h2>
+                                        <p class="slide__text">Travailler avec le sourire et sans stress, c'est sourire à l'avenir</p>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                        <!-- <div class="slide">
+                            <div class="slide__inner">
+                                <div class="sous-slide__inner" style="background: linear-gradient(90deg, #702f32, #fff0);  width: 60vw;">
+                                    <div class="slide__content">
+                                        <p style="color:#702f32; ">international</p>
+                                        <h2 class="slide__heading"> l'IUA Représentée à NANTES</h2>
+                                        <p class="slide__text">Des étudiants de l'IUA en visite à AMON NANTES</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="slide">
+                            <div class="slide__inner">
+                                <div class="sous-slide__inner" style="background: linear-gradient(90deg, #702f32, #fff0);  width: 60vw;">
+                                    <div class="slide__content">
+                                        <p style="color:#702f32; ">environnement</p>
+                                        <h2 class="slide__heading">Un cadre agréable</h2>
+                                        <p class="slide__text">Un environnement encourageant le travail</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="slide">
+                            <div class="slide__inner">
+                                <div class="sous-slide__inner" style="background: linear-gradient(90deg, #564b19, #fff0);  width: 60vw;">
+                                    <div class="slide__content">
+                                        <p style="color:#564b19; ">NOTORIETE</p>
+                                        <h2 class="slide__heading">Limited browser support</h2>
+                                        <p class="slide__text">Forget about IE/Edge and FF</p>
+                                        <p>L'atelier Montage d'archives fait son cinéma</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="slide s--prev">
+                            <div class="slide__inner">
+                                <div class="sous-slide__inner" style="background: linear-gradient(90deg, #09242d, #fff0);  width: 60vw;">
+                                    <div class="slide__content">
+                                        <p style="color:#09242d; ">international</p>
+                                        <h2 class="slide__heading">Visite en Chine</h2>
+                                        <p class="slide__text">Des étudiants de NaN en visite en Shenzhen, Chine</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slides end -->
+                    <div class="slider__control">
+                        <div class="slider__control-line"></div>
+                        <div class="slider__control-line"></div>
+                    </div>
+                    <div class="slider__control slider__control--right m--right">
+                        <div class="slider__control-line"></div>
+                        <div class="slider__control-line"></div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- block1 /*********************************************/ -->
+            <section class="block1 bg_indigo-iua cl_blue-grey pdt-20 pdb-20">
+                <div class="container-fluid block1_1">
+                    <div class="row">
+                        <div class="col-xs-0 col-sm-0 col-md-0 col-lg-1"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 mt-3 text-center">
+                            <center>
+                                <a href="#">
+                                    <div class="icon">
+                                        <img src="ressources/images/icons/campus.svg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="icon_text mt-3">
+                                        <h5><a href="#">Nos campus</a> </h5>
+                                        <hr>
+                                        <br>
+                                        <p class=" block1-divp">
+                                            Plusieurs campus pour toujours être plus proche de vous.
+                                        </p>
+                                        <!-- <p class="text-left mt-4"><a href="#" class="azez">visiter →</a></p> -->
+                                    </div>
+                                </a>
+                            </center>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 mt-3 text-center">
+                            <center>
+                                <div class="icon">
+                                    <img src="ressources/images/icons/calendar.svg" class="img-fluid" alt="" >
+                                </div>
+                                <div class="icon_text mt-3">
+                                    <h5><a href="#">Calendrier</a> </h5>
+                                    <hr>
+                                    <br>
+                                    <p class=" block1-divp">
+                                        Prennez connaissance de notre de nos programmes à venir
+                                    </p>
+                                    <!-- <p class="text-left mt-4"><a href="#" class="azez">consulter →</a></p> -->
+                                </div>
+                            </center>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 mt-3 text-center">
+                            <center>
+                                <div class="icon">
+                                    <img src="ressources/images/icons/books.svg" class="img-fluid" alt="" >
+                                </div>
+                                <div class="icon_text mt-3">
+                                    <h5><a href="#">Bibliothèques</a> </h5>
+                                    <hr>
+                                    <br>
+                                    <p class="block1-divp">
+                                            Une bibliothèque physique bien fournit 
+                                            et une autre virtuelle à votre disposition.
+                                    </p>
+                                    <!-- <p class="text-left mt-4"><a href="#" class="azez">consulter →</a></p> -->
+                                </div>
+                            </center>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 mt-3 text-center">
+                            <center>
+                                <div class="icon">
+                                    <img src="ressources/images/icons/elearning.svg" class="img-fluid" alt="" >
+                                </div>
+                                <div class="icon_text mt-3">
+                                    <h5><a href="#">E-learning</a> </h5>
+                                    <hr>
+                                    <br>
+                                    <p class=" block1-divp">
+                                        Formez vous depuis chez vous en toute tranquilité
+                                    </p>
+                                    <!-- <p class="text-left mt-4"><a href="#" class="azez">plus →</a></p> -->
+                                </div>
+                            </center>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 mt-3 text-center">
+                            <center>
+                                <div class="icon">
+                                    <img src="ressources/images/icons/network.svg" class="img-fluid" alt="" >
+                                </div>
+                                <div class="icon_text mt-3">
+                                    <h5><a href="#"> Alumni </a> </h5>
+                                    <hr>
+                                    <br>
+                                    <p class=" block1-divp">
+                                        profitez de notre réseau d'anciens étudiants.
+                                    </p>
+                                    <!-- <p class="text-left mt-4"><a href="#" class="azez">plus →</a></p> -->
+                                </div>
+                            </center>
+                        </div>
+                        <div class="col-xs-0 col-sm-0 col-md-0 col-lg-1"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- block15 /*********************************************/ -->
+            <section class="block15">
+                <div class="container block1_15">
+                    <div class="row pdt-55 img-rad-tl" >
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 block1_15img"><img src="ressources/images/vicerecteur.jpg" class="img-fluid img-rad-tl" ></div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 pdt-55 block1_15txt img-rad-tr">
+                            <div >
+                                <h4 class=" cl_blue-iua" style="font-weight: bold;font-weight: bold;text-align: left;">l'Institut Universitaire d'Abidjan</h4>
+                                <br>
+                                <p style="font-size: 16px;
+                                line-height: 1.7rem;
+                                color: #1d1c1c;
+                                font-family: 'Open Sans', sans-serif;">
+                                Bienvenue sur le site de l’Institut Universitaire d’Abidjan. Sur ce site vous
+                                 trouverez toutes 
+                                les informations nécessaires sur nos offres de formation ainsi que sur les 
+                                conditions d’accès à ces formations. Vous aurez aussi un aperçu de l’organisation de
+                                 l’Institut et de la vie estudiantine. S’il vous arrivait de ne pas trouver de
+                                  réponses à certaines de vos questions, vous pouvez m’écrire personnellement 
+                                  à akouame@iua-ci.org. Bonne année estudiantine à tous.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row " style="flex-direction:row-reverse">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 block1_15img"><img src="ressources/images/etudiantes.JPG" class="img-fluid img-rad-br" ></div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 pdt-55 block1_15txt img-rad-bl">
+                            <div >
+                                <h4 class=" cl_blue-iua" style="font-weight: bold;font-weight: bold;text-align: left;">Notre pédagogique stricte</h4>
+                                <br>
+                                <p style="font-size: 16px;
+                                line-height: 1.7rem;
+                                color: #1d1c1c;
+                                font-family: 'Open Sans', sans-serif;">
+                                    L’encadrement pédagogique serré que nous offrons à nos étudiants favorise
+                                     leur réussite. Nos outils didactiques et pédagogiques et nos abondantes 
+                                     ressources électroniques offrent à nos étudiants le même environnement d’études que celui 
+                                     qu’on rencontre en occident. Environnement que les activités sportives et socioculturelles rendent encore plus épanouissant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- block3 /*********************************************/ -->
+            <section class="container-fluid faculty">
+                <div class="faculties">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 faculty1 mb-4">
+                            <a href="#">
+                                <div class="facultyStyle1 card-1">
+                                    <h5 style="margin-bottom: 20px;">sciences juridiques & politiques</h5>
+                                    <p>
+                                            Considérées souvent comme une voie royale pour le monde du travail ...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 faculty2 mb-4">
+                            <a href="#">
+                                <div class="facultyStyle1 facultyStyle2 card-1">
+                                    <h5 style="margin-bottom: 20px;">sciences économiques & sociales</h5>
+                                    <p>
+                                            Elle regroupe les licences en sciences sociales appliquées, 
+                                            science economique ...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 faculty1 mb-4">
+                            <a href="#" class="azerty">
+                                <div class="facultyStyle1  facultyStyle4 card-1">
+                                    <h5 style="margin-bottom: 20px;">sciences  & technologies</h5>
+                                    <p>
+                                            Ecole d'ingenierie, Mathematiques et Statistiques, Informatique ...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 faculty2 mb-4 text-center">
+                            <a href="#">
+                                <div class="facultyStyle3 card-1">
+                                    <h5 style="margin-bottom: 20px;">nouveaux masters</h5>
+                                    <p>
+                                            l'IUA ouvres de manière exeptionnel des Masters spécialisés en 
+                                            Géomatique et Droits maritime ...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="facultiesTextAside">
+                    <div class="divInside">
+                        <h6 class="cl_indigo-iua" >Une diversité de formation</h6>
+                        <h2 class=" cl_blue-iua my-title" style="margin: 15px 0px;">Adhérer à nos facultés</h2>
+                        <hr class="my-sdivider">
+                        <p>
+                                L’IUA, Institut Universitaire d'Abidjan est spécialisée dans la préparation aux 
+                                métiers de la Finance d’Entreprise et du Management Stratégique. Notre parcours
+                                 d’études allie dimension entrepreneuriale et internationale, excellence académique
+                                  et acquisition des compétences professionnelles,
+                                 indispensables aux managers et responsables financiers de demain.
+                        </p>
+                        <a class="link link--arrowed hover--none" href="#" style="font-size: 20px;">S'incrire
+                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <g fill="none" stroke="#192f59" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                                <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- blockCount /*********************************************/ -->
+            <section class="blockCount mt-5">
+                <div class="container-fluid blockCount-1">
+                    <div class="row">
+                        <div class="col-md-12 mt-5 mb-5">
+                            <h6  class="celf cl_indigo-iua">un avenir assuré</h6>
+                            <h2 class="celf cl_blue-iua my-title" >Pourquoi étudier à Iua</h2>
+                            <hr class="my-divider">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 celf mb-5">
+                            <img src="ressources/images/icons/goal.svg" class="img-fluid img-icon">
+                            <h3 class="cl_blue-iua">Notre vision</h3>
+                            <p >La vision de l’IUA repose sur ce que doit être l’avenir de la Côte d’Ivoire. Le pays doit devenir un des endroits de la terre où il fait le mieux vivre. <a href="#" >en savoir plus</a></p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 celf mb-5">
+                            <img src="ressources/images/icons/goal.svg" class="img-fluid img-icon">
+                            <h3 class="cl_blue-iua">Nos missions</h3>
+                            <p >L’IUA poursuit 4 missions : La formation La recherche L’assistance technique (services consultatifs) L’intervention sociale. Découvrez les en suivant <a href="#" > ce lien</a></p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 celf mb-5">
+                            <img src="ressources/images/icons/goal.svg" class="img-fluid img-icon">
+                            <h3 class="cl_blue-iua">Propositon de valeurs</h3>
+                            <p>Dans l'optique de devenir l'une des meilleures universités privées de la sous-région ouest – africaine, L'IUA se fonde sur 4 règles d'or... .<a href="#" >en savoir plus</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="intermediate"></div>
+            <section class="blockVideo">
+                <div class="container blockCount-1">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="videoCdre">
+                                <a class="video-play-button js-video-button" data-channel="video" data-video-url="ressources/videos/demo.mp4">
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- counter /*********************************************/ -->
+            <section id="statistic" class="statistic-section one-page-section">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-12 mt-5 mb-5 text-center">
+                            <h6  class=" cl_indigo-iua">une université qualifiante</h6>
+                            <h2 class=" cl_blue-iua my-title" >L'IUA en quelques chiffres</h2>
+                            <hr class="my-divider">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="counter">
+                                <i class="fa fa-coffee fa-2x stats-icon"></i>
+                                <h2 class="timer count-title count">4100</h2>
+                                <div class="stats-line-black"></div>
+                                <p class="stats-text">Étudiants actuels</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="counter">
+                                <i class="fa fa-code fa-2x stats-icon"></i>
+                                <h2 class="timer count-title count">98
+                                </h2>
+                                <div class="stats-line-black"></div>
+                                <p class="stats-text">Intervenants professionnels</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="counter">
+                                <i class="fa fa-clock-o fa-2x stats-icon"></i>
+                                <h2 class="timer count-title count">2999</h2>
+                                <div class="stats-line-black"></div>
+                                <p class="stats-text">Diplômés</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="counter">
+                                <i class="fa fa-laptop fa-2x stats-icon"></i>
+                                <h2 class="timer count-title count">2500</h2>
+                                <div class="stats-line-black"></div>
+                                <p class="stats-text">Insertions professionnelles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- block2 /*********************************************/ -->
+            <section class="block2">
+                <div class="container-fluid block2_2">
+                    <div class="wrapper">
+                        <nav class="tabs nav " id="pills-tab" role="tablist">
+                            <div class="selector"></div>
+                            <a href="#" class="nav-lin active" id="actualite">Actualités</a>
+                            <a class="nav-lin" id="agenda">Agenda</a>
+                        </nav>
+                    </div>
+
+                    <div>
+                        <div class="itent actualite">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 mt-5 actuG">
+                                    <!-- <div style="background:#192f59; height:150px; width:80%; border-radius: 3px;"></div> -->
+                                    <div style="display: flex" class="mt-3 ">
+                                        <img src="ressources/images/icons/newspaper.svg" alt="newspaper" class="img-fluid" style="max-height: 30px">&nbsp;
+                                        <h3 class="cl_indigo-iua">Actualités</h3>
+                                    </div>
+                                    <p class="actu-text">
+                                       Pour tout voir et tout savoir sur l'IUA et ses activités 
+                                    </p>
+                                    <a class="link link--arrowed hover--none" href="#">Voir toutes les actualités
+                                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                            <g fill="none" stroke="#192f59" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                                            <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                            <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 actualités mt-5">
+                                    <h3 class="mt-3 cl_indigo-iua">A la une</h3>
+                                    <div class="blog-card">
+                                        <div class="meta">
+                                            <div class="photo" style="background-image: url(ressources/images/actu1.jpg)"></div>
+                                        </div>
+                                        <div class="description">
+                                            <h1>ACCORD DE COOPERATION</h1>
+                                            <small style="color: #206485c7">publié il y a 2 mois</small>
+                                            <p> Le directeur de l'IUA en visite en inde pour un accord bilatétal avec une prestigieuse université.</p>
+                                            <p class="read-more">
+                                            <a href="#">Lire la suite</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card">
+                                        <div class="meta">
+                                            <div class="photo" style="background-image: url(ressources/images/celluleFeminine.jpeg);"></div>
+                                        </div>
+                                        <div class="description">
+                                            <h1>CELLULE FÉMININE IUA</h1>
+                                            <small style="color: #206485c7">publié il y a 2 mois</small>
+                                            <p> les etudiantes de l'iua soucieuse de leur avenir se retrouvent pour une AG</p>
+                                            <p class="read-more">
+                                            <a href="#">Lire la suite</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-0 col-sm-0 col-md-0 col-lg-4"></div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 actualités">
+                                    <div class="blog-card">
+                                        <div class="meta">
+                                            <div class="photo" style="background-image: url(ressources/images/sport.jpeg);"></div>
+                                        </div>
+                                        <div class="description">
+                                            <h1>UNIVERSITY SPORT GAME 2018</h1>
+                                            <small style="color: #206485c7">publié il y a 2 mois</small>
+                                            <p> 
+                                                Au terme d'une compétition intense, l'IUA remporte le UNIVERSITY SPORT GAME 2018 au tir au but
+                                            </p>
+                                            <p class="read-more">
+                                            <a href="#">Lire la suite</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card">
+                                        <div class="meta">
+                                            <div class="photo" style="background-image: url(ressources/images/maire.jpeg);"></div>
+                                        </div>
+                                        <div class="description">
+                                            <h1>JOURNÉE DE L'INTÉGRATION</h1>
+                                            <small style="color: #206485c7">publié il y a 2 mois</small>
+                                            <p> Pour célébrer la cooperation inter-africaine les etudiants des plusieurs univeristés d'afrique se retouve à l'IUA.</p>
+                                            <p class="read-more">
+                                            <a href="#">Lire la suite</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itent agenda" style="display: none">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-5">
+                                    <!-- <div style="background:#192f59; height:150px; width:80%; border-radius: 3px"></div>-->
+                                    <div style="display: flex" class="mt-3 ">
+                                            <img src="ressources/images/icons/notebook.svg" alt="agenda" class="img-fluid" style="max-height: 30px">&nbsp;
+                                            <h3 class="cl_indigo-iua">Agenda</h3>
+                                    </div>
+                                    
+                                    <p class="actu-text">
+                                        Découvrez les évènements à venir
+                                    </p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 mt-5 coming">
+                                    <h3 class="mt-3 mb-4 cl_indigo-iua" style="font-weight: bold">Evènements à venir</h3>
+                                    <ul>
+                                        <hr>
+                                        <li>
+                                            <ul>
+                                                <li><span>30 SEPT</span></li>
+                                                <li>&nbsp;&nbsp;&nbsp;&nbsp;<small>11h - 15h</small></li>
+                                                <li>&nbsp;&nbsp;<small>administration</small></li>
+                                            </ul>
+                                        </li>
+                                        <li> <a href="#" class="cl_indigo-iua hover--iua hover--iua" style="font-weight: bold;font-family:sans-serif;font-size: 18px;letter-spacing: 1px;">Rentrée universitaire iua</a></li>
+                                        <hr>
+                                        <li>
+                                            <ul>
+                                                <li><span>02 OCT</span></li>
+                                                <li>&nbsp;&nbsp;&nbsp;&nbsp;<small>11h - 13h</small></li>
+                                                <li>&nbsp;&nbsp;<small>amphi du campus A</small></li>
+                                            </ul>
+                                        </li>
+                                        <li> <a href="#" class="cl_indigo-iua hover--iua" style="font-weight: bold;font-family:sans-serif;font-size: 18px;letter-spacing: 1px;">Conférence sur le management</a></li>
+                                        <hr>
+                                        <li>
+                                            <ul>
+                                                <li><span>15 NOV</span></li>
+                                                <li>&nbsp;&nbsp;&nbsp;&nbsp;<small>14h</small></li>
+                                                <li>&nbsp;&nbsp;<small>amphi anvi</small></li>
+                                            </ul>
+                                        </li>
+                                        <li> <a href="#" class="cl_indigo-iua hover--iua" style="font-weight: bold;font-family:sans-serif;font-size: 18px;letter-spacing: 1px;">Inauguration de la salle anvi</a></li>
+                                        <hr>
+                                        <a class="link link--arrowed hover--none" href="#">Voir tous les évènements
+                                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                                <g fill="none" stroke="#192f59" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                                <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 mt-5">
+                                    <div class="newsletter">
+                                        <div style="display: flex;align-items: center;justify-content: center; height: 100%;">
+                                            <div>
+                                                <center><img src="ressources/images/icons/email.svg" class="img-fluid" style="max-height: 90px"></center>
+                                                <h5 class="text-center cl_indigo-iua">Abonnez-vous afin de ne plus rater un seul evènement</h5>
+                                                <form class="text-center">
+                                                    <input type="text" class="input-model" placeholder="addresse mail" style="padding-left: 10px;">
+                                                    <input type="submit" class="input-model" value="souscrire">
+                                                </form>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- defilement /*********************************************/ -->
+            <section>
+                <div class="slider-partner">
+                    <div class="slide-track">
+                        <div class="slide-partner">
+                            <img src="ressources/images/partenaires/auf.png" class="img-fluid" width="200" alt="" />
+                        </div>
+                        <div class="slide-partner">
+                            <img src="ressources/images/partenaires/ieseg.png" class="img-fluid" width="200" alt="" />
+                        </div>
+                        <div class="slide-partner">
+                            <img src="ressources/images/partenaires/montpellier.png" class="img-fluid" width="200" alt="" />
+                        </div>
+                        <div class="slide-partner">
+                            <img src="ressources/images/partenaires/quebec.png" class="img-fluid"  width="200" alt="" />
+                        </div>
+                        <div class="slide-partner">
+                            <img src="ressources/images/partenaires/universite jeanfrançois.png" class="img-fluid" width="200" alt="" />
+                        </div>
+                        
+                        <div class="slide-partner">
+                            <img src="ressources/images/partenaires/groupesup.png" class="img-fluid" width="200" alt="" />
+                        </div>
+                        <div class="slide-partner">
+                            <img src="ressources/images/partenaires/isfa.png" class="img-fluid" width="200" alt="" />
+                        </div>
+                        <div class="slide-partner">
+                            <img src="ressources/images/partenaires/iuma.png" class="img-fluid" width="200" alt="" />
+                        </div>
+                        <div class="slide-partner">
+                            <img src="ressources/images/partenaires/ufhb.png" class="img-fluid"  width="200" alt="" />
+                        </div>
+                        <div class="slide-partner">
+                            <img src="ressources/images/partenaires/universitedenante.png" class="img-fluid" width="200" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer /*********************************************/ -->
+            <footer class="bg_indigo-iua " >
+                <section class="container-fluid footer-block ">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+                            <div class="mb-4">
+                                <img src="ressources/images/iua.png" class="img-fluid" alt="" style="max-height: 100px;border-radius: 5px;"/>
+                            <!-- <img src="ressources/images/iua.png" class="img-fluid" alt=""> -->
+                        </div>
+                            <ul class="footer-block_group1">
+                                <li class="mg cl_blue-iua"><a>Institut Universitaire d'Abidjan</a></li>
+                                <li><a>Du lundi au vendredi: 9h00 - 17h00</a></li>
+                                <li class="mg"><a>Samedi et dimanche: 11h00 - 15h00</a></li>
+                                <li><a>7e Tranche, rue L40 01 BP </a></li>
+                                <li><a>II Plateaux</a></li>
+                                <li class="mg"><a>12159 Abidjan 01</a></li>
+                                <li class="mg cl_yellow mt-3">+225 22-42-22-65 / info@iua-ci.org</li>
+                                <li class="mg cl_yellow"></li>
+                            </ul>
+                            <!-- <hr class="horizontal-bar"> -->
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-4 foot-mgtop">
+                            <h5>L'institut</h5>
+                            <hr class="horizontal-bar">
+                            <ul class="pdt-20">
+                                <li class="mg"><a href="">Présentation</a></li>
+                                <li class="mg"><a href="">Administration</a></li>
+                                <li class="mg"><a href="">Bibliothèques</a></li>
+                                <li class="mg"><a href="">Facultés</a></li>
+                                <li class="mg"><a href="">Partenariat</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-4 foot-mgtop">
+                            <h5>vie universitaire</h5>
+                            <hr class="horizontal-bar">
+                            <ul class="pdt-20">
+                                <li class="mg"><a href="">Clubs et associations</a></li>
+                                <li class="mg"><a href="">Vie étudiante</a></li>
+                                <li class="mg"><a href="">Campus</a></li>
+                                <li class="mg"><a href="">Réseau alumni</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-4 foot-mgtop">
+                            <h5>Liens utiles</h5>
+                            <hr class="horizontal-bar">
+                            <ul class="pdt-20">
+                                <li class="mg"><a href="">Documents administratifs</a></li>
+                                <li class="mg"><a href="">Candidature en ligne</a></li>
+                                <li class="mg"><a href="">Conditions d'admision</a></li>
+                                <li class="mg"><a href="">Bourse</a></li>
+                                <li class="mg mt-3 cl_yellow">Nos réseaux sociaux</li>
+                            </ul>
+                            <ul class="foot-social_media">
+                                <li><a href="#" class=""><ion-icon name="logo-facebook" class="foot-face"></ion-icon></a></li>
+                                <li><a href="#" class="social"><ion-icon name="logo-youtube" class="foot-tube"></ion-icon></a></li>
+                                <li><a href="#" class="social"><ion-icon name="logo-linkedin" class="foot-ld"></ion-icon></a></li>
+                                <li><a href="#" class="social"><ion-icon name="logo-twitter" class="foot-tweet"></ion-icon></a></li>
+                                <li><a href="#" class="social"><ion-icon name="logo-instagram" class="foot-insta"></ion-icon></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <hr style="background:#939fb6a8">
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <p style="color:#939fb6a8">IUA - officiel</p>
+                            
+                        </div>
+                    </div>
+                </section>
+            </footer>
+        </div>
+
+        <section class="conception">
+            <div class="container">
+                <div class="row pdt-20 pdb-20">
+                    <div class="col-12 text-center">
+                            <a href="#"> © 2019 Tout droit réservé, NaN Business </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+        <script src="ressources/js/bootstrap.min.js"></script>
+        <script src="ressources/js/main.js"></script>
+        <script src="ressources/js/jquery-modal-video.min.js"></script>
+        <script>
+                console.clear();
+            
+                const navExpand = [].slice.call(document.querySelectorAll('.nav-expand'));
+                const backLink = 
+                `
+                    <li class="nav-item">
+                        <a class="nav-top"  style="float: right">
+                            <span  id="clo"><img src="ressources/images/icons/cross-square-button.svg" class="img-fluid" style="max-height: 30px;"> </span>
+                        </a>
+                        <br>
+                        <p class="cl_jaune-iua mg-min"> &nbsp; Institut <br>&nbsp; Universitaire <br>&nbsp; Abidjan</p>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link nav-back-link" href="javascript:;">
+                        Retour
+                    </a>
+                    </li>
+                `;
+            
+                navExpand.forEach(item => {
+                  item.querySelector('.nav-expand-content').insertAdjacentHTML('afterbegin', backLink);
+                  item.querySelector('.nav-link').addEventListener('click', () => item.classList.add('active'));
+                  item.querySelector('.nav-back-link').addEventListener('click', () => item.classList.remove('active'));
+                });
+            
+            
+                // ---------------------------------------
+                // not-so-important stuff starts here
+            
+                const ham = document.getElementById('ham');
+                ham.addEventListener('click', function () {
+                  document.body.classList.toggle('nav-is-toggled');
+                  $('#rideau').fadeToggle();
+                });
+
+                $('body').on('click', "#clo", function(){
+                    $('.nav-item.nav-expand').removeClass('active');
+                    $('body').removeClass('nav-is-toggled');
+                    $('#rideau').fadeToggle();
+                });
+
+                $(".js-video-button").modalVideo({
+                    youtube:{
+                        controls:0,
+                        nocookie: true
+                    }
+                });
+        </script>
+       
+
+    </body>
+</html>

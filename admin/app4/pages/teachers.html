@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>index 4</title>
+
+        <!-- favicons  ********************************************* -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../../../ressources/images/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../../../ressources/images/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../../../ressources/images/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../../../ressources/images/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../../../ressources/images/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../../../ressources/images/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../../../ressources/images/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../../../ressources/images/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../ressources/images/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../../../ressources/images/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../ressources/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../../../ressources/images/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../ressources/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../../../ressources/images/favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- stylesheet  ********************************************* -->
+        <link rel="stylesheet" type="text/css" media="screen" href="../../../ressources/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../../adRessources/css/design.css" />
+
+        <script src="../../../ressources/js/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <!-- sidebar /*********************************************/ -->
+        <section id="sidebar" class="brparents">
+            <a href="#">
+                <img src="../../../ressources/images/iua-dark.png"  alt="logo iua" class="img-fluid" />
+            </a>
+            <div class="sidebar-menu">
+                <p class="sidebar-menu_section">General</p>
+                <ul>
+                    <li>
+                        <a href="#">Tableau de bord</a>
+                    </li>
+                </ul>
+
+                <p class="sidebar-menu_section">Etudiants</p>
+                <ul>
+                    <li>
+                        <a href="#">Emploi du temps</a>
+                    </li>
+                    <li>
+                        <a href="#">Rélévé de notes</a>
+                    </li>
+                    <li>
+                        <a href="#">Enseignants</a>
+                    </li>
+                </ul>
+
+                <p class="sidebar-menu_section">Comptabilité</p>
+                <ul>
+                    <li>
+                        <a href="#">Frais de scolarités</a>
+                    </li>
+                    <li>
+                        <a href="#">Divers</a>
+                    </li>
+                </ul>
+
+                <p class="sidebar-menu_section">Administration</p>
+                <ul>
+                    <li>
+                        <a href="#">Siège de l'institut</a>
+                    </li>
+                    <li>
+                        <a href="#">Envoyer un mail</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- main-content /*********************************************/ -->
+        <div id="rideau" style="position: absolute; height:100vh;width:100%; background:rgba(255, 0, 0, 0);display: none"></div>
+
+        <section id="main-content">
+
+            <!-- header /----------------------------/ -->
+            <header class="option-bar">
+                <div class="container-fluid mb-5">
+                    <p>Mon espace</p>
+
+                    
+                    <!-------------------------------->
+                    <a href="#" id="notif">
+                            <div class="notification-point"></div>
+                        <img src="../../adRessources/images/icons/notification.svg"  class="img-fluid">
+                    </a>
+                    <div class="option-notification_card" id="notification-card">
+                        <ul style="margin-bottom: 0px;">
+                            <a href="#">
+                                <li style="padding: 10px 20px;">
+                                    <div style="display: flex">
+                                        <div class="notification-photo_dropdown" style="background: url(../../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                        <ul>
+                                            <li class="cl5">Administration - <small class="cl4">il y a 4 mins</small></li>
+                                            <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li style="padding: 10px 20px;">
+                                    <div style="display: flex">
+                                        <div class="notification-photo_dropdown" style="background: url(../../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                        <ul>
+                                            <li class="cl5">Mr aliko - <small class="cl4">il y a 15 heures</small></li>
+                                            <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li style="padding: 10px 20px;">
+                                    <div style="display: flex">
+                                        <div class="notification-photo_dropdown" style="background: url(../../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                        <ul>
+                                            <li class="cl5">Comptabilité - <small class="cl4">il y a 2 jours</small></li>
+                                            <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li style="padding: 10px 20px;">
+                                    <div style="display: flex">
+                                        <div class="notification-photo_dropdown" style="background: url(../../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                        <ul>
+                                            <li class="cl5">Mme Kouassi - <small class="cl4">il y a 4 jours</small></li>
+                                            <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li style="padding: 10px 20px;">
+                                    <div style="display: flex">
+                                        <div class="notification-photo_dropdown" style="background: url(../../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                        <ul>
+                                            <li class="cl5">Le directeur - <small class="cl4">il y a 12 jours</small></li>
+                                            <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <div class="allMessage text-center mt-3">
+                                    Tous les messages
+                                </div>
+                            </a>
+                        </ul>
+                    </div>
+                    <!-------------------------------->
+                    <div class="option-profil" id="option"></div>
+                    <div class="option-profil_card" id="profil-card">
+                        <ul>
+                            <a href="#"><li><img src="../../adRessources/images/icons/avatar.svg" class="img-fluid " alt="">&nbsp; Mon profil </li></a>
+                            <a href="#"><li> <img src="../../adRessources/images/icons/iua.svg" class="img-fluid " alt="">&nbsp; Deconnexion</li></a>
+                        </ul>
+                    </div>
+                    <!-------------------------------->
+                </div>
+            </header>
+
+            <!-- content /----------------------------/ -->
+            <section class="mt-5 mb-5">
+                <div class="container large">
+                    <!-- <div class="row">
+                        <div class="col-12">
+                            <p class="cl1"><a href="#"class="cl-blue_iua">Tableau de bords </a>→ Espace enseignants </p>
+                        </div>
+                    </div> -->
+                    <div class="row mt-5">
+                        <div class="my-shadow" style="position: relative;border-radius: 6px; height:400px;width: 100%; background:linear-gradient(#212525bf,#212525bf), url(https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_1280.jpg)center;background-size: cover; margin-bottom: 20px;">
+                            <div style="position: absolute; top:15%;left: 3%;">
+                                <div class="col-12">
+                                    <h1 class="cl-blue_iua mb-5 title-page">Espace Enseignant</h1>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <p style="    width: 55%;
+                                    color: #fff;
+                                    font-size: 19px;
+                                    font-family: 'Poppins';
+                                    line-height: 2.1rem;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Enim dolores consequuntur sint accusamus illo dolorem, veritatis molestias 
+                                        quasi eaque earum 
+                                        consectetur voluptatibus repellat ipsa voluptates minus exercitationem ut beatae aliquam!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <p class="cl1"><a href="#"class="cl-blue_iua">Tableau de bords </a>→  Enseignants </p>
+                            </div>
+                        </div> 
+                        <!-- <div class="col-12">
+                            <h1 class="cl3 mb-5 title-page">Espace Enseignant</h1>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <p style="width: 60%">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Enim dolores consequuntur sint accusamus illo dolorem, veritatis molestias 
+                                 quasi eaque earum 
+                                consectetur voluptatibus repellat ipsa voluptates minus exercitationem ut beatae aliquam!
+                            </p>
+                        </div> -->
+                    </div>
+                    <!-------------------------------------->
+                    <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5" >
+                                <div class="card teacher-card">
+                                    <!-- image recommandé : 640*426-->
+                                    <img src="../../adRessources/images/dog.jpg" class="img-fluid rounded" alt="">
+                                    <div>
+                                        <ul>
+                                            <li><p><span>Nom : </span><br> Lorem</p></li>
+                                            <li><p><span>Prénoms : </span><br> Ipsum Dagobert Rigobert Marie-Désiré Aliou Bertain</p></li>
+                                            <li><p><span>Matière : </span><br> Administration du droit des affaires </p></li>
+                                            <li><span class="cl2">+225 32 34 32 12</span></li>
+                                            <li><p><a href="#"><span>Dagobertouelle@gmail.com</span></a></p></li>
+                                        </ul>
+                                        <a href="#">
+                                            <div  class="centrer card-1">
+                                                <img src="../../adRessources/images/icons/comments.svg" class="img-fluid" style="max-height: 25px" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5" >
+                                <div class="card teacher-card">
+                                    <!-- image recommandé : 640*426-->
+                                    <img src="../../adRessources/images/dog.jpg" class="img-fluid rounded" alt="">
+                                    <div>
+                                        <ul>
+                                            <li><p><span>Nom : </span><br> Lorem</p></li>
+                                            <li><p><span>Prénoms : </span><br> Ipsum Dagobert Rigobert Marie-Désiré Aliou Bertain</p></li>
+                                            <li><p><span>Matière : </span><br> Administration du droit des affaires </p></li>
+                                            <li><span class="cl2">+225 32 34 32 12</span></li>
+                                            <li><p><a href="#"><span>Dagobertouelle@gmail.com</span></a></p></li>
+                                        </ul>
+                                        <a href="#">
+                                            <div  class="centrer card-1">
+                                                <img src="../../adRessources/images/icons/comments.svg" class="img-fluid" style="max-height: 25px" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5" >
+                                <div class="card teacher-card">
+                                    <!-- image recommandé : 640*426-->
+                                    <img src="../../adRessources/images/dog.jpg" class="img-fluid rounded" alt="">
+                                    <div>
+                                        <ul>
+                                            <li><p><span>Nom : </span><br> Lorem</p></li>
+                                            <li><p><span>Prénoms : </span><br> Ipsum Dagobert Rigobert Marie-Désiré Aliou Bertain</p></li>
+                                            <li><p><span>Matière : </span><br> Administration du droit des affaires </p></li>
+                                            <li><span class="cl2">+225 32 34 32 12</span></li>
+                                            <li><p><a href="#"><span>Dagobertouelle@gmail.com</span></a></p></li>
+                                        </ul>
+                                        <a href="#">
+                                            <div  class="centrer card-1">
+                                                <img src="../../adRessources/images/icons/comments.svg" class="img-fluid" style="max-height: 25px" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5" >
+                                <div class="card teacher-card">
+                                    <!-- image recommandé : 640*426-->
+                                    <img src="../../adRessources/images/dog.jpg" class="img-fluid rounded" alt="">
+                                    <div>
+                                        <ul>
+                                            <li><p><span>Nom : </span><br> Lorem</p></li>
+                                            <li><p><span>Prénoms : </span><br> Ipsum Dagobert Rigobert Marie-Désiré Aliou Bertain</p></li>
+                                            <li><p><span>Matière : </span><br> Administration du droit des affaires </p></li>
+                                            <li><span class="cl2">+225 32 34 32 12</span></li>
+                                            <li><p><a href="#"><span>Dagobertouelle@gmail.com</span></a></p></li>
+                                        </ul>
+                                        <a href="#">
+                                            <div  class="centrer card-1">
+                                                <img src="../../adRessources/images/icons/comments.svg" class="img-fluid" style="max-height: 25px" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5" >
+                                <div class="card teacher-card">
+                                    <!-- image recommandé : 640*426-->
+                                    <img src="../../adRessources/images/dog.jpg" class="img-fluid rounded" alt="">
+                                    <div>
+                                        <ul>
+                                            <li><p><span>Nom : </span><br> Lorem</p></li>
+                                            <li><p><span>Prénoms : </span><br> Ipsum Dagobert Rigobert Marie-Désiré Aliou Bertain</p></li>
+                                            <li><p><span>Matière : </span><br> Administration du droit des affaires </p></li>
+                                            <li><span class="cl2">+225 32 34 32 12</span></li>
+                                            <li><p><a href="#"><span>Dagobertouelle@gmail.com</span></a></p></li>
+                                        </ul>
+                                        <a href="#">
+                                            <div  class="centrer card-1">
+                                                <img src="../../adRessources/images/icons/comments.svg" class="img-fluid" style="max-height: 25px" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5" >
+                                <div class="card teacher-card">
+                                    <!-- image recommandé : 640*426-->
+                                    <img src="../../adRessources/images/dog.jpg" class="img-fluid rounded" alt="">
+                                    <div>
+                                        <ul>
+                                            <li><p><span>Nom : </span><br> Lorem</p></li>
+                                            <li><p><span>Prénoms : </span><br> Ipsum Dagobert Rigobert Marie-Désiré Aliou Bertain</p></li>
+                                            <li><p><span>Matière : </span><br> Administration du droit des affaires </p></li>
+                                            <li><span class="cl2">+225 32 34 32 12</span></li>
+                                            <li><p><a href="#"><span>Dagobertouelle@gmail.com</span></a></p></li>
+                                        </ul>
+                                        <a href="#">
+                                            <div  class="centrer card-1">
+                                                <img src="../../adRessources/images/icons/comments.svg" class="img-fluid" style="max-height: 25px" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5" >
+                                <div class="card teacher-card">
+                                    <!-- image recommandé : 640*426-->
+                                    <img src="../../adRessources/images/dog.jpg" class="img-fluid rounded" alt="">
+                                    <div>
+                                        <ul>
+                                            <li><p><span>Nom : </span><br> Lorem</p></li>
+                                            <li><p><span>Prénoms : </span><br> Ipsum Dagobert Rigobert Marie-Désiré Aliou Bertain</p></li>
+                                            <li><p><span>Matière : </span><br> Administration du droit des affaires </p></li>
+                                            <li><span class="cl2">+225 32 34 32 12</span></li>
+                                            <li><p><a href="#"><span>Dagobertouelle@gmail.com</span></a></p></li>
+                                        </ul>
+                                        <a href="#">
+                                            <div  class="centrer card-1">
+                                                <img src="../../adRessources/images/icons/comments.svg" class="img-fluid" style="max-height: 25px" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5" >
+                                <div class="card teacher-card">
+                                    <!-- image recommandé : 640*426-->
+                                    <img src="../../adRessources/images/dog.jpg" class="img-fluid rounded" alt="">
+                                    <div>
+                                        <ul>
+                                            <li><p><span>Nom : </span><br> Lorem</p></li>
+                                            <li><p><span>Prénoms : </span><br> Ipsum Dagobert Rigobert Marie-Désiré Aliou Bertain</p></li>
+                                            <li><p><span>Matière : </span><br> Administration du droit des affaires </p></li>
+                                            <li><span class="cl2">+225 32 34 32 12</span></li>
+                                            <li><p><a href="#"><span>Dagobertouelle@gmail.com</span></a></p></li>
+                                        </ul>
+                                        <a href="#">
+                                            <div  class="centrer card-1">
+                                                <img src="../../adRessources/images/icons/comments.svg" class="img-fluid" style="max-height: 25px" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5" >
+                                <div class="card teacher-card">
+                                    <!-- image recommandé : 640*426-->
+                                    <img src="../../adRessources/images/dog.jpg" class="img-fluid rounded" alt="">
+                                    <div>
+                                        <ul>
+                                            <li><p><span>Nom : </span><br> Lorem</p></li>
+                                            <li><p><span>Prénoms : </span><br> Ipsum Dagobert Rigobert Marie-Désiré Aliou Bertain</p></li>
+                                            <li><p><span>Matière : </span><br> Administration du droit des affaires </p></li>
+                                            <li><span class="cl2">+225 32 34 32 12</span></li>
+                                            <li><p><a href="#"><span>Dagobertouelle@gmail.com</span></a></p></li>
+                                        </ul>
+                                        <a href="#">
+                                            <div  class="centrer card-1">
+                                                <img src="../../adRessources/images/icons/comments.svg" class="img-fluid" style="max-height: 25px" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5" >
+                                <div class="card teacher-card">
+                                    <!-- image recommandé : 640*426-->
+                                    <img src="../../adRessources/images/dog.jpg" class="img-fluid rounded" alt="">
+                                    <div>
+                                        <ul>
+                                            <li><p><span>Nom : </span><br> Lorem</p></li>
+                                            <li><p><span>Prénoms : </span><br> Ipsum Dagobert Rigobert Marie-Désiré Aliou Bertain</p></li>
+                                            <li><p><span>Matière : </span><br> Administration du droit des affaires </p></li>
+                                            <li><span class="cl2">+225 32 34 32 12</span></li>
+                                            <li><p><a href="#"><span>Dagobertouelle@gmail.com</span></a></p></li>
+                                        </ul>
+                                        <a href="#">
+                                            <div  class="centrer card-1">
+                                                <img src="../../adRessources/images/icons/comments.svg" class="img-fluid" style="max-height: 25px" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5" >
+                                <div class="card teacher-card">
+                                    <!-- image recommandé : 640*426-->
+                                    <img src="../../adRessources/images/dog.jpg" class="img-fluid rounded" alt="">
+                                    <div>
+                                        <ul>
+                                            <li><p><span>Nom : </span><br> Lorem</p></li>
+                                            <li><p><span>Prénoms : </span><br> Ipsum Dagobert Rigobert Marie-Désiré Aliou Bertain</p></li>
+                                            <li><p><span>Matière : </span><br> Administration du droit des affaires </p></li>
+                                            <li><span class="cl2">+225 32 34 32 12</span></li>
+                                            <li><p><a href="#"><span>Dagobertouelle@gmail.com</span></a></p></li>
+                                        </ul>
+                                        <a href="#">
+                                            <div  class="centrer card-1">
+                                                <img src="../../adRessources/images/icons/comments.svg" class="img-fluid" style="max-height: 25px" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5" >
+                                <div class="card teacher-card">
+                                    <!-- image recommandé : 640*426-->
+                                    <img src="../../adRessources/images/dog.jpg" class="img-fluid rounded" alt="">
+                                    <div>
+                                        <ul>
+                                            <li><p><span>Nom : </span><br> Lorem</p></li>
+                                            <li><p><span>Prénoms : </span><br> Ipsum Dagobert Rigobert Marie-Désiré Aliou Bertain</p></li>
+                                            <li><p><span>Matière : </span><br> Administration du droit des affaires </p></li>
+                                            <li><span class="cl2">+225 32 34 32 12</span></li>
+                                            <li><p><a href="#"><span>Dagobertouelle@gmail.com</span></a></p></li>
+                                        </ul>
+                                        <a href="#">
+                                            <div  class="centrer card-1">
+                                                <img src="../../adRessources/images/icons/comments.svg" class="img-fluid" style="max-height: 25px" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------------->
+                  
+                </div>
+            </section>
+
+            <footer>
+                <p class="text-center">© 2019 Tout droit réservé IUA,<a href="#"> NaN Business</a></p>
+            </footer>
+        </section>
+        
+
+        
+        <script src="../../../ressources/js/bootstrap.min.js"></script>
+        <script src="../../adRessources/js/script.js"></script>
+
+    </body>
+</html>

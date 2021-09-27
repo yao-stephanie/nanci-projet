@@ -1,0 +1,12 @@
+
+
+besoins d'un étudiant dans une université
+-----------------------------------------
+
+* emploi de temps
+* mes notes
+* mes enseignants
+
+* tchat avec mes amis
+* tchat avec les enseignants
+* tchat avec l'administration

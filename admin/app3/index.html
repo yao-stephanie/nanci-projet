@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>index 3 - etudiants</title>
+
+        <!-- favicons  ********************************************* -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../../ressources/images/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../../ressources/images/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../../ressources/images/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../../ressources/images/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../../ressources/images/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../../ressources/images/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../../ressources/images/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../../ressources/images/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../ressources/images/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../../ressources/images/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../ressources/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../../ressources/images/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../ressources/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../../ressources/images/favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- stylesheet  ********************************************* -->
+        <link rel="stylesheet" type="text/css" media="screen" href="../../ressources/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../adRessources/css/design.css" />
+
+        <script src="../../ressources/js/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <!-- sidebar /*********************************************/ -->
+        <section id="sidebar" class="bretudiant">
+            <a href="#">
+                <img src="../../ressources/images/iua-etud.png"  alt="logo iua" class="img-fluid" />
+            </a>
+            <div class="sidebar-menu">
+                <p class="sidebar-menu_section jaune-etudiant">General</p>
+                <ul>
+                    <li>
+                        <a href="#">Tableau de bord</a>
+                    </li>
+                    <li>
+                        <a href="#">Emploi du temps</a>
+                    </li>
+                    <li>
+                        <a href="#">Mes résultats scolaire</a>
+                    </li>
+                </ul>
+
+                <p class="sidebar-menu_section jaune-etudiant">Etude</p>
+                <ul>
+                   <li>
+                        <a href="#">Mes enseignants</a>
+                    </li>
+                    <li>
+                        <a href="#">Ma classe</a>
+                    </li>
+                    <li>
+                        <a href="#">e-cours</a>
+                    </li>
+                    <li>
+                        <a href="#">Mes exercices</a>
+                    </li>
+                </ul>
+
+                <p class="sidebar-menu_section jaune-etudiant">Vie Universitaire</p>
+                <ul>
+                    <li>
+                        <a href="#">clubs & associations</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- main-content /*********************************************/ -->
+        <div id="rideau" style="position: absolute; height:100vh;width:100%; background:rgba(255, 0, 0, 0);display: none"></div>
+
+        <section id="main-content">
+
+            <!-- header /----------------------------/ -->
+            <header class="option-bar">
+                    <div class="container-fluid mb-5">
+                        <p class="jaune-etudiant">Mon espace</p>
+    
+                        <!-------------------------------->
+                        <a href="#" id="message">
+                                <div class="message-point"></div>
+                            <img src="../adRessources/images/icons/mail.svg"  class="img-fluid">
+                        </a>
+                        <div class="option-message_card" id="message-card">
+                            <ul style="margin-bottom: 0px;">
+                                <a href="#">
+                                    <li style="padding: 10px 20px;">
+                                        <div style="display: flex">
+                                            <div class="notification-photo_dropdown" style="background: url(../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                            <ul>
+                                                <li class="cl5">Administration - <small class="cl4">il y a 4 mins</small></li>
+                                                <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li style="padding: 10px 20px;">
+                                        <div style="display: flex">
+                                            <div class="notification-photo_dropdown" style="background: url(../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                            <ul>
+                                                <li class="cl5">Mr aliko - <small class="cl4">il y a 15 heures</small></li>
+                                                <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li style="padding: 10px 20px;">
+                                        <div style="display: flex">
+                                            <div class="notification-photo_dropdown" style="background: url(../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                            <ul>
+                                                <li class="cl5">Comptabilité - <small class="cl4">il y a 2 jours</small></li>
+                                                <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li style="padding: 10px 20px;">
+                                        <div style="display: flex">
+                                            <div class="notification-photo_dropdown" style="background: url(../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                            <ul>
+                                                <li class="cl5">Mme Kouassi - <small class="cl4">il y a 4 jours</small></li>
+                                                <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li style="padding: 10px 20px;">
+                                        <div style="display: flex">
+                                            <div class="notification-photo_dropdown" style="background: url(../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                            <ul>
+                                                <li class="cl5">Le directeur - <small class="cl4">il y a 12 jours</small></li>
+                                                <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <div class="allMessage text-center mt-3">
+                                        Tous les messages
+                                    </div>
+                                </a>
+                            </ul>
+                        </div>
+                        <!-------------------------------->
+                        <a href="#" id="notif">
+                                <div class="notification-point"></div>
+                            <img src="../adRessources/images/icons/notification.svg"  class="img-fluid">
+                        </a>
+                        <div class="option-notification_card" id="notification-card">
+                            <ul style="margin-bottom: 0px;">
+                                <a href="#">
+                                    <li style="padding: 10px 20px;">
+                                        <div style="display: flex">
+                                            <div class="notification-photo_dropdown" style="background: url(../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                            <ul>
+                                                <li class="cl5">Administration - <small class="cl4">il y a 4 mins</small></li>
+                                                <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li style="padding: 10px 20px;">
+                                        <div style="display: flex">
+                                            <div class="notification-photo_dropdown" style="background: url(../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                            <ul>
+                                                <li class="cl5">Mr aliko - <small class="cl4">il y a 15 heures</small></li>
+                                                <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li style="padding: 10px 20px;">
+                                        <div style="display: flex">
+                                            <div class="notification-photo_dropdown" style="background: url(../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                            <ul>
+                                                <li class="cl5">Comptabilité - <small class="cl4">il y a 2 jours</small></li>
+                                                <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li style="padding: 10px 20px;">
+                                        <div style="display: flex">
+                                            <div class="notification-photo_dropdown" style="background: url(../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                            <ul>
+                                                <li class="cl5">Mme Kouassi - <small class="cl4">il y a 4 jours</small></li>
+                                                <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li style="padding: 10px 20px;">
+                                        <div style="display: flex">
+                                            <div class="notification-photo_dropdown" style="background: url(../adRessources/images/téléchargement.jpeg) center;background-size: cover;"></div>
+                                            <ul>
+                                                <li class="cl5">Le directeur - <small class="cl4">il y a 12 jours</small></li>
+                                                <li><small>Bonjour,je m'appelle Lorem ipsum...</small></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <div class="allMessage text-center mt-3">
+                                        Tous les messages
+                                    </div>
+                                </a>
+                            </ul>
+                        </div>
+                        <!-------------------------------->
+                        <div class="option-profil" id="option"></div>
+                        <div class="option-profil_card" id="profil-card">
+                            <ul>
+                                <a href="#"><li><img src="../adRessources/images/icons/avatar.svg" class="img-fluid " alt="">&nbsp; Mon profil </li></a>
+                                <a href="#"><li> <img src="../adRessources/images/icons/iua.svg" class="img-fluid " alt="">&nbsp; Deconnexion</li></a>
+                            </ul>
+                        </div>
+                        <!-------------------------------->
+                    </div>
+                </header>
+
+            <!-- content /----------------------------/ -->
+            <section class="mt-5 mb-5">
+                <div class="container-fluid large">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card br5" style="position: relative">
+                                <a href="#">
+                                    <div class="card-body">
+                                        <img src="../adRessources/images/icons/dollar.svg" class="img-fluid img-dashCard bg4"  alt="">
+                                        <span class="list-dashcard">
+                                            <ul>
+                                                <li class="">Classe</li>
+                                                <li class="number">Master 1</li>
+                                            </ul>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card br5">
+                                <a href="#">
+                                    <div class="card-body">
+                                        <img src="../adRessources/images/icons/student.svg" class="img-fluid img-dashCard bg2"  alt="">
+                                        <span class="list-dashcard">
+                                            <ul>
+                                                <li class="">Etudiants inscrits</li>
+                                                <li class="number">10 étudiants</li>
+                                            </ul>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card br5">
+                                <a href="#">
+                                    <div class="card-body">
+                                        <img src="../adRessources/images/icons/newspaper.svg" class="img-fluid img-dashCard bg3"  alt="">
+                                        <span class="list-dashcard">
+                                            <ul>
+                                                <li class="">Actualités</li>
+                                                <li class="number">10 notifications</li>
+                                            </ul>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p class="text-center">© 2019 Tout droit réservé IUA,<a href="#"> NaN Business</a></p>
+            </footer>
+        </section>
+        
+
+        
+
+        <script src="../../ressources/js/bootstrap.min.js"></script>
+        <script src="../adRessources/js/script.js"></script>
+
+    </body>
+</html>
